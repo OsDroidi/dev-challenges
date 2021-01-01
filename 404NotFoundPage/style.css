@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+img {
+  width: 70%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+
+  align-items: center;
+}
+
+button {
+  background-color: #333333;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 24px 43px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.info {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.page {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
