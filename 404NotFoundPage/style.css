@@ -8,16 +8,27 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+.page {
+  padding: 40px 0 0 77px;
+}
+
 img {
-  width: 70%;
-  height: auto;
+  display: block;
+}
+
+.item1 img {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .flex-container {
   display: flex;
 
   align-items: center;
+  min-height: 100vh;
 }
+
+
 
 button {
   background-color: #333333;
@@ -29,11 +40,15 @@ button {
 .title {
   font-size: 64px;
   font-weight: 700;
+  padding: 0 0 36px 0;
+  width: 80%;
 }
 
 .info {
   font-size: 24px;
   font-weight: 400;
+  padding: 0 0 64px 0;
+  width: 50%;
 }
 
 .page {
@@ -41,8 +56,32 @@ button {
   font-weight: 700;
 }
 
+.footer {
+padding: 96px 0 42px 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item2 {
+  padding-left: 24px;
+}
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+  }
+  .title {
+    padding-top: 60px;
+    font-size: 48px;
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    font-size: 18px;
+    
+  }
+
+  .page {
+    padding: 20px 0 70px 24px;
   }
 }
